@@ -7,6 +7,8 @@ const Match = (props) => {
         <div className='match-show'>
             <img src={img} alt="" />
             <h2>{name}</h2>
+            <h4>Match Time: {time}</h4>
+            <button>Add To List</button>
         </div>
     );
 };

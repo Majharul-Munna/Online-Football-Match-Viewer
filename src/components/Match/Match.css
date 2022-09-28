@@ -1,12 +1,26 @@
 .match-show{
     width: 350px;
-    height: 500px;
+    height: 410px;
     margin: 50px;
     border: 1px solid silver;
-    background-color: aliceblue;
+    border-radius: 10px;
+    background-color: rgb(233, 201, 160);
 }
 .match-show img{
     width: 300px;
     height: 200px;
-    margin-top: 5px;
+    margin-top: 25px;
+    border: 1px solid saddlebrown;
+    border-radius: 10px;
+}
+.match-show button{
+    background-color: rgb(126, 170, 251); 
+    width: 85%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.match-show button:hover{
+    background-color: rgb(140, 170, 214);
 }
