@@ -3,12 +3,13 @@ import './Match.css'
 
 const Match = (props) => {
     const {name, img, time} = props.product;
+    // const {handelAddToCart} = props;
     return (
         <div className='match-show'>
             <img src={img} alt="" />
             <h2>{name}</h2>
             <h4>Match Time: {time}</h4>
-            <button>Add To List</button>
+            <button onClick={() => props.handelAddToCart(props.product)}>Add To List</button>
         </div>
     );
 };

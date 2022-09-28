@@ -8,7 +8,10 @@ const Game = () => {
         fetch('products.json')
         .then(res=> res.json())
         .then(data=> setProducts(data))
-    }, [])
+    }, []);
+    const handelAddToCart = (product) =>{
+        console.log(product);
+    }
     return (
         <div className='game-container'>
             <div className='match-details'>
@@ -16,6 +19,7 @@ const Game = () => {
                     products.map(product=> <Match 
                         key={product.id}
                         product={product}
+                        handelAddToCart={handelAddToCart}
                         ></Match>)
                 }
             </div>
