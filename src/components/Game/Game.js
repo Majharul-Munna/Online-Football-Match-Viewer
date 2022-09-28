@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Match from '../Match/Match';
 import './Game.css'
 
 const Game = () => {
@@ -10,7 +11,14 @@ const Game = () => {
     }, [])
     return (
         <div className='game-container'>
-            <div className='match-details'> This is Match: {products.length}</div>
+            <div className='match-details'>
+                {
+                    products.map(product=> <Match 
+                        key={product.id}
+                        product={product}
+                        ></Match>)
+                }
+            </div>
 
             <div className='match-time'>This Match time</div>
         </div>

@@ -1,0 +1,12 @@
+.match-show{
+    width: 350px;
+    height: 500px;
+    margin: 50px;
+    border: 1px solid silver;
+    background-color: aliceblue;
+}
+.match-show img{
+    width: 300px;
+    height: 200px;
+    margin-top: 5px;
+}

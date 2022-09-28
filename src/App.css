@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+.App h1{
+  color: rgb(192, 46, 46);
+  font-family:'Times New Roman', Times, serif;
+  
+}
 
 .App-logo {
   height: 40vmin;
