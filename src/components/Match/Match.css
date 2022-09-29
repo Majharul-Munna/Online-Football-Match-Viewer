@@ -1,7 +1,7 @@
 .match-show{
     width: 350px;
     height: 410px;
-    margin: 50px;
+    margin: 40px;
     border: 1px solid silver;
     border-radius: 10px;
     background-color: rgb(233, 201, 160);
@@ -23,4 +23,18 @@
 }
 .match-show button:hover{
     background-color: rgb(140, 170, 214);
+}
+@media screen and (max-width:800px){
+    .match-show{
+        width: 300px;
+        height: 410px;
+        margin: 30px;
+    }
+    .match-show img{
+        width: 280px;
+        height: 200px;
+        margin-top: 25px;
+        border: 1px solid saddlebrown;
+        border-radius: 10px;
+    }
 }

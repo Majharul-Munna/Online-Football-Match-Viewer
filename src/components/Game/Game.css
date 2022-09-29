@@ -6,13 +6,17 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-@media screen and (max-width:1080px){
-    .match-details{
-        grid-template-columns: repeat(2, 1fr);
-    }    
-}
 .match-time{
+    width: 300px;
     background-color: rgb(232, 230, 230);
     border-radius: 20px;
     margin-right: 50px;
+}
+@media screen and (max-width:800px){
+    .match-details{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .game-container{
+        grid-template-columns: 3fr 1fr;
+    }    
 }
