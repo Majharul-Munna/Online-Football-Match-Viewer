@@ -2,6 +2,12 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = ({cart}) => {
+    
+    let total = 0;
+    for (const product of cart) {
+        total = total + product.time;
+    }
+
     return (
         <div>
             <h2>Match Info</h2>
@@ -18,9 +24,9 @@ const Cart = ({cart}) => {
                 <button className='break-time'>40 m</button>
                 <button className='break-time'>50 m</button>
             </div>
-            <div>
+            <div className='total-duration'>
                 <p>Selected Matches: {cart.length}</p> 
-                <h3>Match Duration: </h3>
+                <h3>Match Duration: {total} minute</h3>
                 <h3>Break Duration: </h3>
             </div>
         </div>

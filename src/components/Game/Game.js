@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {addToDB} from '../../utilites/fakedb';
 import Cart from '../Cart/Cart';
 import Match from '../Match/Match';
 import './Game.css'
@@ -15,6 +16,7 @@ const Game = () => {
         console.log(product);
         const newCart =[...cart, product];
         setCart(newCart);
+        addToDB(product.id);
     }
     return (
         <div className='game-container'>

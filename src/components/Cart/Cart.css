@@ -22,3 +22,7 @@
     border: none;
     border-radius: 20px;
 }
+.total-duration h3{
+    background-color: beige;
+    padding: 20px;
+}
