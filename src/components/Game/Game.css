@@ -6,3 +6,11 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+@media screen and (max-width:1080px){
+    .match-details{
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+.match-time{
+    background-color: rgb(232, 230, 230);
+}

@@ -8,7 +8,7 @@ const Match = (props) => {
         <div className='match-show'>
             <img src={img} alt="" />
             <h2>{name}</h2>
-            <h4>Match Time: {time}</h4>
+            <h4>Match Time: {time} minute</h4>
             <button onClick={() => props.handelAddToCart(props.product)}>Add To List</button>
         </div>
     );

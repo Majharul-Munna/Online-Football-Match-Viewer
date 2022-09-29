@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Match from '../Match/Match';
 import './Game.css'
 
 const Game = () => {
     const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
     useEffect( () => {
         fetch('products.json')
         .then(res=> res.json())
@@ -11,6 +13,8 @@ const Game = () => {
     }, []);
     const handelAddToCart = (product) =>{
         console.log(product);
+        const newCart =[...cart, product];
+        setCart(newCart);
     }
     return (
         <div className='game-container'>
@@ -24,7 +28,9 @@ const Game = () => {
                 }
             </div>
 
-            <div className='match-time'>This Match time</div>
+            <div className='match-time'>
+               <Cart cart={cart}></Cart>
+            </div>
         </div>
     );
 };

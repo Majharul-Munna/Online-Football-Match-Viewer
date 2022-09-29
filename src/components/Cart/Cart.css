@@ -1,0 +1,24 @@
+.brazil-info{
+    background-color: beige;
+    padding: 20px;
+}
+.brazil{
+    color: rgb(27, 111, 255);
+    font-size: 30px;
+}
+.world-cup{
+    color: orange;
+    font-size: 22px;
+}
+.break{
+    background-color: beige;
+    padding: 20px;
+}
+.break-time{
+    color: aquamarine;
+    background-color: black;
+    padding: 10px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 20px;
+}
