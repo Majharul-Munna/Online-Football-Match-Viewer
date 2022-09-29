@@ -4,8 +4,10 @@ import './Cart.css'
 const Cart = ({cart}) => {
     
     let total = 0;
+    let quantity = 0;
     for (const product of cart) {
-        total = total + product.time;
+        quantity = quantity + product.quantity;
+        total = total + product.time * product.quantity;
     }
 
     return (
@@ -25,7 +27,7 @@ const Cart = ({cart}) => {
                 <button className='break-time'>50 m</button>
             </div>
             <div className='total-duration'>
-                <p>Selected Matches: {cart.length}</p> 
+                <h2>Match Details</h2>
                 <h3>Match Duration: {total} minute</h3>
                 <h3>Break Duration: </h3>
             </div>

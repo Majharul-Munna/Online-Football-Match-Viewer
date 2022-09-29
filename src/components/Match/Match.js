@@ -3,7 +3,6 @@ import './Match.css'
 
 const Match = (props) => {
     const {name, img, time} = props.product;
-    // const {handelAddToCart} = props;
     return (
         <div className='match-show'>
             <img src={img} alt="" />
