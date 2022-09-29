@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGamepad, faTrophy } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
 
 const Cart = ({cart}) => {
@@ -40,7 +42,11 @@ const Cart = ({cart}) => {
             <div className='brazil-info'>
             <h3>My Fave Team: <span className='brazil'>Brazil</span></h3>
             <h5>Won World Cup 5 Times: <br />
-            <span className='world-cup'>1958, 1962, 1970, 1994, 2002</span></h5>
+            <span className='world-cup'><FontAwesomeIcon icon={faTrophy}></FontAwesomeIcon>1958,
+            <FontAwesomeIcon icon={faTrophy}></FontAwesomeIcon> 1962, 
+            <FontAwesomeIcon icon={faTrophy}></FontAwesomeIcon>1970, 
+            <FontAwesomeIcon icon={faTrophy}></FontAwesomeIcon>1994, 
+            <FontAwesomeIcon icon={faTrophy}></FontAwesomeIcon>2002</span></h5>
             </div>
 
             <h2>Add A Break</h2>
