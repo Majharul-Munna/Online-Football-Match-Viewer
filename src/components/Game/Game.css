@@ -13,4 +13,6 @@
 }
 .match-time{
     background-color: rgb(232, 230, 230);
+    border-radius: 20px;
+    margin-right: 50px;
 }

@@ -31,6 +31,9 @@ const Cart = ({cart}) => {
                 <h3>Match Duration: {total} minute</h3>
                 <h3>Break Duration: </h3>
             </div>
+            <div>
+                <button className='last-button'>All Completed</button>
+            </div>
         </div>
     );
 };
